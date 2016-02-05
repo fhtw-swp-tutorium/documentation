@@ -37,7 +37,7 @@ Zeigt die Summe aller Zeitbuchungen des aktuellen Tages eines Users in Minuten a
 
 ## 2.1 Singleton-Pattern
 
-Verwenden Sie das Singleton-Pattern um die Daten zu speichern/halten. zB User, Projekte, Zeitbuchungen.
+Verwenden Sie das Singleton-Pattern um Daten zu speichern/halten. zB User, Projekte, Zeitbuchungen, Kommando-Historie.
 
 ## 2.2 Command-Pattern
 
@@ -45,7 +45,7 @@ Verwenden Sie das Command-Pattern um die einzelnen Kommandos umzusetzen.
 
 ## 2.3 Observer-Pattern
 
-Mithilfe des Observer-Patterns sollen 2 Usecases umgesetzt werden.
+Mithilfe des Observer-Patterns sollen 2 Usecases umgesetzt werden:
 
 ### 2.3.1 Arbeitszeit-Warnung
 
