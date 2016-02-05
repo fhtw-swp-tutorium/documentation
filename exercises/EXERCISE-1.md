@@ -58,7 +58,8 @@ Sobald ein neuer User angelegt wird, soll auch ein Observer erzeugt werden, der 
 
 #### 2.3.2.1 Format
 
-Jede Zeitbuchung soll in folgendem Format in die Datei geschrieben werden: "`timestamp` `#project-tag` `duration` `description`".
+Jede Zeitbuchung soll in folgendem Format in die Datei geschrieben werden:  
+"`timestamp` `#project-tag` `duration` `description`".
 
 - Der `timestamp` soll dem ISO8601-Format entsprechen. zB 2007-12-24T18:21Z  
 - Die `duration` soll in Minuten abgespeichert werden.    
