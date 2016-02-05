@@ -8,7 +8,7 @@ Sie werden im Zuge dieser Übung folgende Pattern implementieren:
 
 Es soll eine Kommandozeilenapplikation entstehen, mit der die Arbeitszeit von verschiedenen Benutzern in verschiedenen Projekten aufgezeichnet werden kann. Die Anwendung bietet eine interaktive Konsole, auf der Kommandos eingegeben werden können. 
 
-# Kommandos
+# 1. Kommandos
 
 Folgende Kommandos sollen zur Verfügung stehen:
 
@@ -33,29 +33,30 @@ Zeigt eine Liste aller verfügbaren Kommandos mit einer Beschreibung an. (zB Par
 - **stats** `username`  
 Zeigt die Summe aller Zeitbuchungen des aktuellen Tages eines Users in Minuten auf der Console an.
 
-# Implementierungsdetails
+# 2. Implementierungsdetails
 
-## Singleton-Pattern
+## 2.1 Singleton-Pattern
 
 Verwenden Sie das Singleton-Pattern um die Daten zu speichern/halten. zB User, Projekte, Zeitbuchungen.
 
-## Command-Pattern
+## 2.2 Command-Pattern
 
 Verwenden Sie das Command-Pattern um die einzelnen Kommandos umzusetzen.
 
-## Observer-Pattern
+## 2.3 Observer-Pattern
 
 Mithilfe des Observer-Patterns sollen 2 Usecases umgesetzt werden.
 
-### Arbeitszeit-Warnung
+### 2.3.1 Arbeitszeit-Warnung
 
-Wenn die Arbeitszeit eines Users 8h pro Tag überschreitet, soll folgende Meldung auf der Konsole erscheinen: "Achtung! Arbeitszeit von User XX um Y Minuten überschritten."
+Wenn die Arbeitszeit eines Users 8h pro Tag überschreitet, soll folgende Meldung auf der Konsole erscheinen:  
+"Achtung! Arbeitszeit von User XX um Y Minuten überschritten."
 
-### Arbeitszeit-Logger
+### 2.3.2 Arbeitszeit-Logger
 
 Sobald ein neuer User angelegt wird, soll auch ein Observer erzeugt werden, der alle Zeitbuchungen dieses Users in einer Datei protokolliert. Natürlich müssen die Zeitbuchungen auch im Speicher gehalten werden (siehe _stats_ Kommando). 
 
-#### Format
+#### 2.3.2.1 Format
 
 Jede Zeitbuchung soll in folgendem Format in die Datei geschrieben werden: "`timestamp` `#project-tag` `duration` `description`".
 
@@ -63,18 +64,18 @@ Jede Zeitbuchung soll in folgendem Format in die Datei geschrieben werden: "`tim
 - Die `duration` soll in Minuten abgespeichert werden.    
 - Der `project-tag` soll mit der Raute abgespeichert werden. 
 
-#### Zusätzliche Anforderungen
+#### 2.3.2.2 Zusätzliche Anforderungen
 
 - Das File-Handle sollte nur so lange wie nötig "offen" bleiben.
 - Der Name des Files entspricht dem `username`.
 - Jede Zeile darf nur einen Datensatz beinhalten.
 - Sobald eine Zeile einmal in die Datei geschrieben wurde, darf diese nicht mehr verändert werden. 
 
-#### Stornierung
+#### 2.3.2.3 Stornierung
 
 Da eine bereits protokollierte Zeile niemals verändert werden darf, soll im Falle eines `Undo`s für ein `addtime` Kommando DIESELBE Zeile nocheinmal protokolliert werden, allerdings diesmal mit einem `-` am Beginn. 
 
-# Kennzeichnung der Patterns:
+# 3. Kennzeichnung der Patterns:
 
 Damit die Übung erfolgreich automatisiert getestet werden kann, müssen Sie folgende Annotationen/Attribute in Ihrem Projekt verwenden:
 
@@ -89,7 +90,7 @@ __Folgende Patterns__ müssen dadurch gekennzeichnet werden:
 - Command: 
     - tbd
 
-# Bearbeitungshistorie
+# 4. Bearbeitungshistorie
 
 04.02.2016 - Initiale Angabe
 
