@@ -9,7 +9,7 @@ Bei technischen Problemen, die mit der Ausführung des SwpTestTools zusammenhän
 
 In diesem Repository finden Sie folgende Informationen:
 
-- [Automatisierte Bewertung](#)  
+- [Automatisierte Bewertung](https://github.com/fhtw-swp-tutorium/documentation/blob/master/AUTOMATION.md)  
   Hier wird beschrieben, wie die automatische Bewertung der Abgabe funktioniert und was Sie dafür beachten müssen. Außerdem wir erklärt, welche Eigenheiten sich für die jeweilige Programmiersprache (`Java`/`.Net`) ergeben und wie Sie selbst das checkSwpProject Tool ausführen können, um Ihr Programm zu überprüfen.
 - [Exercises](#)  
   Im `exercises` Ordner finden Sie die Angaben zu den jeweiligen Übungen, welche Sie im Laufe dieses Semester implementieren werden.
