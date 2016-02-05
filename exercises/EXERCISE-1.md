@@ -70,7 +70,7 @@ Jede Zeitbuchung soll in folgendem Format in die Datei geschrieben werden:
 - Das File-Handle sollte nur so lange wie nötig "offen" bleiben.
 - Der Name des Files entspricht dem `username`.
 - Jede Zeile darf nur einen Datensatz beinhalten.
-- Sobald eine Zeile einmal in die Datei geschrieben wurde, darf diese nicht mehr verändert werden. 
+- Sobald eine Zeile einmal in die Datei geschrieben wurde, darf diese Zeile nicht mehr verändert werden, daher ist nur das Hinzufügen von neuen Zeilen möglich.
 
 #### 2.3.2.3 Stornierung
 
