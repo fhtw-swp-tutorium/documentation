@@ -11,7 +11,7 @@ In diesem Repository finden Sie folgende Informationen:
 
 - [Automatisierte Bewertung](#)  
   Hier wird beschrieben, wie die automatische Bewertung der Abgabe funktioniert und was Sie dafür beachten müssen. Außerdem wir erklärt, welche Eigenheiten sich für die jeweilige Programmiersprache (`Java`/`.Net`) ergeben und wie Sie selbst das checkSwpProject Tool ausführen können, um Ihr Programm zu überprüfen.
-- [Exercises](#)
+- [Exercises](#)  
   Im `exercises` Ordner finden Sie die Angaben zu den jeweiligen Übungen, welche Sie im Laufe dieses Semester implementieren werden.
 
 # Feedback
